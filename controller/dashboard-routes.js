@@ -22,4 +22,9 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
-
+// Route to GET new post written by admin/user
+router.get("/new", withAuth, (req, res) => {
+  res.render("new-post", {
+    layout: "dashboard",
+  });
+});

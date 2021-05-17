@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.sender("all-posts", { posts });
+    res.render("all-posts", { posts });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -48,7 +48,7 @@ router.get('/login', (req, res) => {
         return;
     }
 
-    res.sender('signup');
+    res.render('login');
 });
 
 // Route that GETS signup page if login does not exist
@@ -58,7 +58,7 @@ router.get('/signup', (req, res) => {
         return;
     }
 
-    res.sender('signup');
+    res.render('signup');
 });
 
 module.exports = router;
