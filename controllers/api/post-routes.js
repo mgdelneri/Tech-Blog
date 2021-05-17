@@ -4,9 +4,11 @@ const withAuth = require('../../utils/auth');
 
 // Connects with router in the back-end to POST newly-created post
 router.post('/', withAuth, async (req, res) => {
+  const body = req.body;
+
   try {
     const newPost = await Post.create({
-      ...req.body,
+      ...body,
       userId: req.session.userId,
     });
     res.json(newPost);

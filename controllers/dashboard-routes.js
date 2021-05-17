@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post } = require("../models/");
+const { Post } = require("../models");
 const withAuth = require("../utils/auth");
 
 // Route to GET all posts written by user from server, if they are logged in

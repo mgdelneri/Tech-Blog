@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, Comment, User } = require("../models/");
+const { Post, Comment, User } = require("../models");
 
 // Route to GET all already-existing posts from server to show in homepage
 router.get("/", async (req, res) => {
