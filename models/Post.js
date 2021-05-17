@@ -3,6 +3,7 @@ const sequelize = require("../config/connection");
 
 class Post extends Model {}
 
+// Create Post model
 Post.init(
   {
     title: DataTypes.STRING,
