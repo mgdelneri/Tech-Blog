@@ -18,7 +18,7 @@ Here is an image of the deployed Tech-Blog app:
 
 ## USAGE
 
-The Tech-Blog app is deployed in Heroku under the [Tech-Blog Heroku link]().
+The Tech-Blog app is deployed in Heroku under the [Tech-Blog Heroku link](https://cryptic-beyond-95236.herokuapp.com/).
 
 The user can also access the app by using the Node.js command "npm start" in the Terminal of the Tech-Blog repo in VS Code. This will start the router in localhost:3001 in the user's browser. 
 
